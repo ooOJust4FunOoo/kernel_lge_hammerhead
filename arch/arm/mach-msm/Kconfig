@@ -3069,10 +3069,10 @@ config AUTOSMP
 	  CPU load and suspend state.
 
 config FORCE_FAST_CHARGE
-	bool "Force AC charge mode at will"
-	default y
+	bool "Force fast charging (AC/USB)"
 	help
 	  A simple sysfs interface to force adapters that
-	  are detected as USB to charge as AC.
+	  are detected as USB to charge as AC (1A/h) or to set
+	  custom charging currents for AC and USB.
 
 endif
